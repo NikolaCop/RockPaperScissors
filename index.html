@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Rock Paper Scissors</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="row bg-success p-2">
+            <div class="col-12 text-center text-white">
+                <h3>Rock, Paper, Scissors</h3>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-12 bg-success text-white text-center">
+                <h5>Game of the Year Edition</h5>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row bg-dark p-2">
+                <div class="col-12 text-center">
+                    <p class="bot"><i class="fas fa-robot"></i> VS Super Intelligent AI <i class="fas fa-robot"></i></p>
+                </div>
+                <div class="col-12 text-center">
+                    <p id="text-change" class="Attack">-- SELECT YOUR MOVE --</p>
+                </div>
+            </div>
+            <!--BUTTON SECTION-->
+            <div class="row bg-dark p-3">
+
+                <div class="col-4 d-flex justify-content-center p-3">
+                    <button type="button" class="btn btn-lg btn-info" onclick="play('Rock')"> <i
+                            class="far fa-hand-rock"></i>
+                        Rock!
+                    </button>
+                </div>
+
+                <div class="col-4 d-flex justify-content-center p-3">
+                    <button type="button" class="btn btn-lg btn-info" onclick="play('Scissors')"> <i
+                            class="far fa-hand-scissors"></i>
+                        Scissors!
+                </div>
+
+                <div class="col-4 d-flex justify-content-center p-3">
+                    <button type="button" class="btn btn-lg btn-info" onclick="play('Paper')"><i
+                            class="far fa-hand-paper"></i>
+                        Paper!
+                    </button>
+                </div>
+
+            </div>
+
+
+
+            <!-- RESET BUTTON -->
+            <div class="row bg-dark p-2">
+                <div class="col-12 d-flex justify-content-center p-3">
+                    <button type="button" class="btn btn-danger" onclick="restart()">Reset</button>
+                </div>
+            </div>
+
+            <!-- END OF MAIN -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="row bg-success">
+            <div class="col-12 text-center text-white pt-3">
+                <p class="dlc">Click here to purchase the Rock, Paper, Scissors Season Pass for $99.99 <i
+                        class="fab fa-cc-visa"></i> <i class="fab fa-cc-amex"></i> <i class="fab fa-cc-paypal"></i></p>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
